@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace HerenciaQ22024
 {
     public class Animal
@@ -26,6 +21,13 @@ namespace HerenciaQ22024
         /// <summary>
         /// Familia del Animal
         /// </summary>
-        public string Familia { get; set; }
+        public Familia Familia { get; set; }
+
+        // Constructor
+        public Animal()
+        {
+            Familia = new Familia();
+        }
+
     }
 }
