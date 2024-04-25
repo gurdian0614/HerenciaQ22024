@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace HerenciaQ22024
 {
     public class Vertebrado : Animal
@@ -33,6 +28,12 @@ namespace HerenciaQ22024
         /// </summary>
         public bool EsCarnivoro { get; set; }
 
+        // Constructor
+        public Vertebrado() { 
+            TienePatas = true;
+            EsCarnivoro = true;
+        }
+
         /// <summary>
         /// Imprime cada uno de los atributos de la clase
         /// </summary>
@@ -41,12 +42,14 @@ namespace HerenciaQ22024
             Console.WriteLine($"Nombre: {Nombre}");
             Console.WriteLine($"Color: {Color}");
             Console.WriteLine($"Tamaño: {Tamano}");
-            Console.WriteLine($"Familia: {Familia}");
+            Console.WriteLine($"Familia: {Familia.Nombre}");
             Console.WriteLine($"Tipo: {Tipo}");
             Console.WriteLine($"Tiene Patas: {(TienePatas ? "Sí" : "No")}");
             Console.WriteLine($"Es Doméstico: {(EsDomestico ? "Sí" : "No")}");
             Console.WriteLine($"Es Herbívoro: {(EsHerbivoro ? "Sí" : "No")}");
             Console.WriteLine($"Es Carnívoro: {(EsCarnivoro ? "Sí" : "No")}");
+            Console.WriteLine();
+            Console.WriteLine();
         }
         
     }
