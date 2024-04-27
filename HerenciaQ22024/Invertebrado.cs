@@ -41,7 +41,7 @@ namespace HerenciaQ22024
             Console.WriteLine($"Tipo: {Tipo}");
             Console.WriteLine($"Tiene concha: {(TieneConcha ? "Sí" : "No")}");
             Console.WriteLine($"Tiene Patas: {(TienePatas ? "Sí" : "No")}");
-            Console.WriteLine($"{(TienePatas ? "Número de patas: {NumeroPatas}" : "")}");
+            Console.WriteLine($"{(TienePatas ? $"Número de patas: {NumeroPatas}" : "")}");
         }
     }
 }
